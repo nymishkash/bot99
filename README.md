@@ -1,5 +1,3 @@
-To create a README file for your project "bot99" on GitHub, here's a structured template you can use:
-
 ---
 
 # bot99
