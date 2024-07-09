@@ -13,7 +13,7 @@ const App = () => {
     setInput('');
 
     try {
-      const response = await axios.post('http://localhost:3000/chat', {
+      const response = await axios.post('https://indirect-kristel-nymish-30e138b5.koyeb.app/chat', {
         message: userMessage,
         userId: 'user123' // Static user ID for this example
       });
