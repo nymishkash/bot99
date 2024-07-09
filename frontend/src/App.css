@@ -1,0 +1,104 @@
+/* Import JetBrains Mono from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(9, 96, 155);
+  color: white;
+  font-family: 'JetBrains Mono', monospace;
+
+}
+
+.header {
+  width: 40%;
+  height: 70px;
+  border: 1px solid #333;
+  max-width: 600px;
+  text-align: center;
+  background-color: #1f1f1f;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  font-size: 24px;
+  font-family: 'JetBrains Mono', monospace;
+  color: #009ebe;
+  font-weight: bold;
+  box-shadow: #1f1f1f 0px 0px 15px;
+  
+  /* Flexbox properties to center text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-box {
+  width: 40%;
+  max-width: 600px;
+  height: 70%;
+  border: 1px solid #333;
+  border-radius: 0 0 5px 5px;
+  background-color: #1f1f1f;
+  padding: 10px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  box-shadow: #1f1f1f 0px 0px 15px;
+  font-family: 'Arial, Helvetica, sans-serif';
+}
+
+.message {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  max-width: 70%;
+  word-wrap: break-word;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.user {
+  background-color: #2b6eda;
+  color: #e4e3e3;
+  align-self: flex-end;
+  text-align: right;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.bot {
+  background-color: #4c4c4c;
+  color: #e4e3e3;
+  align-self: flex-start;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.input-box {
+  width: 40%;
+  max-width: 600px;
+  display: flex;
+  margin-top: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  background-color: #333;
+  color: white;
+}
+      
+button {
+  padding: 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #1f1f1f;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #414141;
+}
