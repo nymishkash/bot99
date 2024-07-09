@@ -42,7 +42,7 @@
   border-radius: 0 0 5px 5px;
   background-color: #1f1f1f;
   padding: 10px;
-  overflow-y: scroll;
+  overflow-y:scroll;
   display: flex;
   flex-direction: column;
   box-shadow: #1f1f1f 0px 0px 15px;
@@ -52,7 +52,7 @@
 .message {
   padding: 10px;
   margin: 5px;
-  border-radius: 10px;
+  border-radius: 5px;
   max-width: 70%;
   word-wrap: break-word;
   font-family: 'JetBrains Mono', monospace;
@@ -84,7 +84,7 @@ input {
   flex: 1;
   padding: 10px;
   border: 1px solid #333;
-  border-radius: 10px;
+  border-radius: 7px;
   background-color: #333;
   color: white;
 }
