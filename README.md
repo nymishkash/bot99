@@ -4,6 +4,12 @@
 
 bot99 is a hotel booking chatbot project built using Express.js for the backend and React for the frontend. It integrates with the Google Gemini API for natural language processing and handles hotel room bookings for Radisson Blu Plaza.
 
+## Live Link
+
+The project has been deployed on this link https://master.d1el54b466o7zv.amplifyapp.com/
+
+NOTE: THE DEPLOYED APPLICATION USES AMAZON AWS FOR FRONTEND AND RENDER FOR BACKEND. PLEASE ALLOW 2-3 MINUTES FOR THE BOT TO GENERATE THE REPLY FOR YOUR VERY FIRST MESSAGE. ALL REPLIES AFTER THIS SHOULD BE INSTANTANEOUS.
+
 ## Setup
 
 Follow these steps to set up and run the project locally:
