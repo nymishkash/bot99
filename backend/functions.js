@@ -22,6 +22,35 @@ async function makeBooking({ roomId, fullName, email, nights }) {
         'Content-Type': 'application/json'
       }
     });
+
+    async function sendEmail(fullName, email, response) {
+      const mailOptions = {
+        from: process.env.EMAIL_USER,
+        to: email,
+        subject: 'Booking Confirmation',
+        html: `
+          <h1>Booking Confirmation</h1>
+          <p>Dear ${fullName},</p>
+          <p><b>Thank you for booking with the Raddison Blu Plaza Hotel. Your booking details are given below:</b></p>
+          <ul>
+            <li>Booking ID: ${response.bookingId}</li>
+            <li>Room Type: ${response.roomName}</li>
+            <li>Number of Nights: ${response.nights}</li>
+            <li>Total Price: $${response.totalPrice}</li>
+          </ul>
+          <p>We look forward to welcoming you to the Radisson Blu Plaza Hotel!</p>
+        `
+      };
+    
+      try {
+        await transporter.sendMail(mailOptions);
+        console.log('Confirmation email sent successfully');
+      } catch (error) {
+        console.error('Error sending confirmation email:', error);
+      }
+    }
+
+    await sendEmail(fullName, email, response.data);
     
     return response.data; // Assuming the response contains booking details
   } catch (error) {

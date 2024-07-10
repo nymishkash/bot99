@@ -12,7 +12,7 @@ const {
   FunctionDeclarationSchemaType,
 } = require("@google/generative-ai");
 
-const     app = express();                
+const app = express();                
 
 app.use(cors());
 app.use(express.json());
@@ -99,6 +99,7 @@ Blubot is a chatbot specifically designed to assist customers in making reservat
 
 - Booking Process:
   - Ask for check-in and check-out dates.
+  - Ensure the dates are valid, keep the number of dys in each month in mind. Also consider leap years. Ensure the check in date is before the check out date.
   - Calculate the total cost of booking based on the dates.
   - Store the calculated cost in memory.
   - Ask for booking confirmation.
