@@ -10,6 +10,15 @@ async function fetchRoomDetails() {
   }
 }
 
+const transporter = nodemailer.createTransport({
+  host: 'smtp.gmail.com',
+  port: 587,
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS
+  }
+});
+
 async function makeBooking({ roomId, fullName, email, nights }) {
   try {
     const response = await axios.post('https://bot9assignement.deno.dev/book', {
