@@ -12,7 +12,7 @@ const {
   FunctionDeclarationSchemaType,
 } = require("@google/generative-ai");
 
-const app = express();                
+const     app = express();                
 
 app.use(cors());
 app.use(express.json());
