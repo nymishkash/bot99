@@ -32,6 +32,19 @@
   align-items: center;
 }
 
+.note {
+  font-size: 14px;
+  background-color: #1f1f1f;
+  width: 40%;
+  max-width: 600px;
+  border: 1px solid #333;
+  padding: 10px;
+  box-shadow: #1f1f1f 0px 0px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .chat-box {
   width: 40%;
   max-width: 600px;

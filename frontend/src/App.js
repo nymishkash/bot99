@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import './App.css';
+import Marquee from "react-fast-marquee";
 
 const App = () => {
   const [messages, setMessages] = useState([]);
@@ -43,6 +44,9 @@ const App = () => {
       <header className="header">
         <h1>Blubot</h1>
       </header>
+      <div className = "note">
+        <Marquee behavior="scroll" direction="left" pauseOnHover="true">OTE: The first message may take 1-2 minutes to generate a reply \\ Subsequent messages should be instantaneous \\ N</Marquee>
+      </div>
       <div className="chat-box" ref={chatBoxRef}>
         {messages.map((msg, index) => (
           <div key={index} className={`message ${msg.sender}`} dangerouslySetInnerHTML={{ __html: msg.text }} />
